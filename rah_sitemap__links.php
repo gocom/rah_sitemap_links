@@ -35,15 +35,18 @@ class rah_sitemap__links
 		$local = str_replace(array('%', '_'), array('\\%', '\\_'), doSlash(hu));
 
 		$rs = 
-			safe_rows(
+			safe_rows_start(
 				'url, date',
 				'txp_link',
 				"category='rah_sitemap' or url LIKE '".$local."_%' or url LIKE '/_%'"
 			);
 
-		foreach ($rs as $a)
+		if ($rs)
 		{
-			rah_sitemap::get()->url($a['url'], $a['date']);
+			while ($a = nextRow($rs))
+			{
+				rah_sitemap::get()->url($a['url'], $a['date']);
+			}
 		}
 	}
 }
