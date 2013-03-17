@@ -37,7 +37,7 @@ class rah_sitemap__links
 		$rs = safe_rows_start(
 			'url, date',
 			'txp_link',
-			"category='rah_sitemap' or url LIKE '".$local."_%' or url LIKE '/_%'"
+			"category = 'rah_sitemap' or url like '".$local."_%' or url like '/_%'"
 		);
 
 		if ($rs)
