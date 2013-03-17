@@ -47,5 +47,3 @@ class rah_sitemap__links
 		}
 	}
 }
-
-?>
