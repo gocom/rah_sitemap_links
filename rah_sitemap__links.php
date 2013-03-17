@@ -34,12 +34,11 @@ class rah_sitemap__links
 	{
 		$local = str_replace(array('%', '_'), array('\\%', '\\_'), doSlash(hu));
 
-		$rs = 
-			safe_rows_start(
-				'url, date',
-				'txp_link',
-				"category='rah_sitemap' or url LIKE '".$local."_%' or url LIKE '/_%'"
-			);
+		$rs = safe_rows_start(
+			'url, date',
+			'txp_link',
+			"category='rah_sitemap' or url LIKE '".$local."_%' or url LIKE '/_%'"
+		);
 
 		if ($rs)
 		{
