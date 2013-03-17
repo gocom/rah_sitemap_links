@@ -9,12 +9,6 @@
  * @license   GLPv2
  */
 
-	new rah_sitemap__links();
-
-/**
- * The module class.
- */
-
 class rah_sitemap__links
 {
 	/**
@@ -49,3 +43,5 @@ class rah_sitemap__links
 		}
 	}
 }
+
+new rah_sitemap__links();
