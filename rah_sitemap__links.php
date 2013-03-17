@@ -4,9 +4,10 @@
  * Links module for rah_sitemap.
  * 
  * @package   rah_sitemap
- * @author    Jukka Svahn <http://rahforum.biz/>
+ * @author    Jukka Svahn
  * @copyright (c) 2012 Jukka Svahn
  * @license   GLPv2
+ * @link      https://github.com/gocom/rah_sitemap__links
  */
 
 class rah_sitemap__links
