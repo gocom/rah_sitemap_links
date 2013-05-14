@@ -12,39 +12,32 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-class rah_sitemap__links
+register_callback('rah_sitemap_links_urlset', 'rah_sitemap.urlset');
+
+/**
+ * Adds links to the sitemap.
+ *
+ * @param string $event
+ * @param string $step
+ * @param string $void
+ * @param array  $urls
+ */
+
+function rah_sitemap_links_urlset($event, $step, $void, $urls)
 {
-	/**
-	 * Constructor.
-	 */
+	$local = str_replace(array('%', '_'), array('\\%', '\\_'), doSlash(hu));
 
-	public function __construct()
+	$rs = safe_rows_start(
+		'url, date',
+		'txp_link',
+		"category = 'rah_sitemap' or url like '".$local."_%' or url like '/_%'"
+	);
+
+	if ($rs)
 	{
-		register_callback(array($this, 'urlset'), 'rah_sitemap.urlset');
-	}
-
-	/**
-	 * Adds links to the sitemap.
-	 */
-
-	public function urlset()
-	{
-		$local = str_replace(array('%', '_'), array('\\%', '\\_'), doSlash(hu));
-
-		$rs = safe_rows_start(
-			'url, date',
-			'txp_link',
-			"category = 'rah_sitemap' or url like '".$local."_%' or url like '/_%'"
-		);
-
-		if ($rs)
+		while ($a = nextRow($rs))
 		{
-			while ($a = nextRow($rs))
-			{
-				rah_sitemap::get()->url($a['url'], $a['date']);
-			}
+			$urls[$a['url']] = $a['date'];
 		}
 	}
 }
-
-new rah_sitemap__links();
