@@ -2,12 +2,14 @@
 
 /**
  * Links module for rah_sitemap.
- * 
- * @package   rah_sitemap
- * @author    Jukka Svahn
- * @copyright (c) 2012 Jukka Svahn
- * @license   GLPv2
- * @link      https://github.com/gocom/rah_sitemap__links
+ *
+ * @author  Jukka Svahn
+ * @license GNU GPLv2
+ * @link    http://rahforum.biz/plugins/rah_sitemap_links
+ *
+ * Copyright (C) 2013 Jukka Svahn http://rahforum.biz
+ * Licensed under GNU General Public License version 2
+ * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 class rah_sitemap__links
