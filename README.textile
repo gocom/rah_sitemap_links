@@ -19,7 +19,7 @@ p. Any link that meets one of the following criteria will be included in the sit
 
 h2. Changelog
 
-h3. Version 0.1 - upcoming
+h3. Version 0.1.0 - upcoming
 
 * Initial release.
 * Compatible with rah_sitemap 1.3.
