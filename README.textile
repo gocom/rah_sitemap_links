@@ -1,18 +1,20 @@
 h1. Links module for rah_sitemap
 
-p. "Packagist":https://packagist.org/packages/rah/rah_sitemap_links | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_sitemap_links
+"Download":https://github.com/gocom/rah_sitemap_links/releases | "Packagist":https://packagist.org/packages/rah/rah_sitemap_links | "Issues":https://github.com/gocom/rah_sitemap_links/issues | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_sitemap_links
 
-p. This is a humble links module for "rah_sitemap":http://rahforum.biz/plugins/rah_sitemap. It adds links from "Textpattern's":http://textpattern.com Links panel to the XML based sitemap.
+This "Textpattern CMS":":http://textpattern.com plugin is a links module for "rah_sitemap":https://github.com/gocom/rah_sitemap. It adds links from the Links panel to the XML based sitemap.
 
-h2. Installing
+h2. Install
 
-p. Using "Composer":http://getcomposer.org:
+Using "Composer":http://getcomposer.org:
 
-bc. $ composer.phar require rah/rah_sitemap
+bc. $ composer require rah/rah_sitemap_links:*
+
+Or "download":https://github.com/gocom/rah_sitemap_links/releases a plugin package.
 
 h2. How it works
 
-p. Any link that meets one of the following criteria will be included in the sitemap:
+Any link that meets one of the following criteria will be included in the sitemap:
 
 * Is published to a category named *rah_sitemap*.
 * The URL starts with the site's URL (i.e. @http://mysite.com/@).
