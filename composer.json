@@ -1,23 +1,23 @@
 {
-	"name": "rah/rah_sitemap_links",
-	"description": "Links module for rah_sitemap",
-	"keywords": ["textpattern", "plugin"],
-	"homepage": "https://github.com/gocom/rah_sitemap_links",
-	"license": "GPL-2.0",
-	"type": "textpattern-plugin",
-	"authors": [
-		{
-			"name": "Jukka Svahn",
-			"homepage": "http://rahforum.biz",
-			"role": "Developer"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/gocom/rah_sitemap_links/issues",
-		"source": "https://github.com/gocom/rah_sitemap_links"
-	},
-	"require": {
-		"textpattern/installer": "*",
-		"rah/rah_sitemap": "*"
-	}
+    "name": "rah/rah_sitemap_links",
+    "description": "Links module for rah_sitemap",
+    "keywords": ["textpattern", "plugin"],
+    "homepage": "https://github.com/gocom/rah_sitemap_links",
+    "license": "GPL-2.0",
+    "type": "textpattern-plugin",
+    "authors": [
+        {
+            "name": "Jukka Svahn",
+            "homepage": "http://rahforum.biz",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gocom/rah_sitemap_links/issues",
+        "source": "https://github.com/gocom/rah_sitemap_links"
+    },
+    "require": {
+        "textpattern/installer": "*",
+        "rah/rah_sitemap": "*"
+    }
 }

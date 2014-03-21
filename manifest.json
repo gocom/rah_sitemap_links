@@ -1,11 +1,11 @@
 {
-	"name"        : "rah_sitemap_links",
-	"description" : "Links module for rah_sitemap",
-	"version"     : "0.1.0",
-	"type"        : 0,
-	"author"      : "Jukka Svahn",
-	"author_uri"  : "http://rahforum.biz",
-	"order"       : 5,
-	"flags"       : 0,
-	"help"        : {"file" : ["./README.textile"]}
+    "name": "rah_sitemap_links",
+    "description": "Links module for rah_sitemap",
+    "version": "0.1.0",
+    "type": 0,
+    "author": "Jukka Svahn",
+    "author_uri": "http://rahforum.biz",
+    "order": 5,
+    "flags": 0,
+    "help": {"file" : ["./README.textile"]}
 }
