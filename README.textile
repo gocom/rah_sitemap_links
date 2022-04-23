@@ -24,7 +24,7 @@ h2. Changelog
 
 h3. Version 0.2.1 - 2022/04/24
 
-* Re-package 0.2.1 with corrected help document headings.
+* Re-package 0.2.0 with corrected help document headings.
 
 h3. Version 0.2.0 - 2022/04/24
 
