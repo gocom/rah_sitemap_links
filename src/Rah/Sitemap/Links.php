@@ -39,10 +39,9 @@ final class Rah_Sitemap_Links
      *
      * @param string $event
      * @param string $step
-     * @param string $void
-     * @param array $sitemaps
+     * @param Rah_Sitemap_RecordInterface[] $sitemaps
      */
-    public function register($event, $step, $void, &$sitemaps): void
+    public function register($event, $step, &$sitemaps): void
     {
         $sitemaps[] = new Rah_Sitemap_Links_Record_LinkRecord();
     }
