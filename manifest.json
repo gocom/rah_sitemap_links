@@ -9,6 +9,7 @@
     "flags": 0,
     "help": {"file" : ["./README.textile"]},
     "code": {"file" : [
+        "./src/Rah/Sitemap/Links/Record/LinkRecord.php",
         "./src/Rah/Sitemap/Links.php",
         "./src/Index.php"
     ]}
