@@ -4,7 +4,7 @@
  * rah_sitemap_links - Links module for rah_sitemap
  * https://github.com/gocom/rah_sitemap_links
  *
- * Copyright (C) 2019 Jukka Svahn
+ * Copyright (C) 2022 Jukka Svahn
  *
  * This file is part of rah_sitemap_links.
  *
@@ -31,31 +31,19 @@ final class Rah_Sitemap_Links
      */
     public function __construct()
     {
-        register_callback([$this, 'urlset'], 'rah_sitemap.urlset');
+        register_callback([$this, 'register'], 'rah_sitemap.sitemaps');
     }
 
     /**
-     * Adds links to the sitemap.
+     * Adds links to the sitemap index.
      *
      * @param string $event
      * @param string $step
      * @param string $void
-     * @param array  $urls
+     * @param array $sitemaps
      */
-    public function urlset($event, $step, $void, $urls): void
+    public function register($event, $step, $void, &$sitemaps): void
     {
-        $local = str_replace(array('%', '_'), array('\\%', '\\_'), doSlash(hu));
-
-        $rs = safe_rows_start(
-            'url, date',
-            'txp_link',
-            "category = 'rah_sitemap' or url like '".$local."_%' or url like '/_%'"
-        );
-
-        if ($rs) {
-            while ($a = nextRow($rs)) {
-                $urls[$a['url']] = $a['date'];
-            }
-        }
+        $sitemaps[] = new Rah_Sitemap_Links_Record_LinkRecord();
     }
 }
