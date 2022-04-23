@@ -22,7 +22,11 @@ Any link that meets one of the following criteria will be included in the sitema
 
 h2. Changelog
 
-h2. Version 0.2.0 - 2022/04/24
+h3. Version 0.2.1 - 2022/04/24
+
+* Re-package 0.2.1 with corrected help document headings.
+
+h3. Version 0.2.0 - 2022/04/24
 
 * rah_sitemap >= 3.0.0 compatibility.
 * Now requires rah_sitemap >= 3.0.0.
