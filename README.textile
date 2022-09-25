@@ -22,6 +22,10 @@ Any link that meets one of the following criteria will be included in the sitema
 
 h2. Changelog
 
+h3. Version 0.2.2 - 2022/09/25
+
+* Updated Composer version constraint to support rah_sitemap >= 4.0.0.
+
 h3. Version 0.2.1 - 2022/04/24
 
 * Re-package 0.2.0 with corrected help document headings.
